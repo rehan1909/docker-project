@@ -1,4 +1,4 @@
-## demo app - developing with Docker
+Docker Project -developing with Docker
 
 This demo app shows a simple user profile app set up using 
 - index.html with pure js and css styles
@@ -22,8 +22,6 @@ Step 2: start mongodb
 Step 3: start mongo-express
     
     docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=password --net mongo-network --name mongo-express -e ME_CONFIG_MONGODB_SERVER=mongodb mongo-express   
-
-_NOTE: creating docker-network in optional. You can start both containers in a default network. In this case, just emit `--net` flag in `docker run` command_
 
 Step 4: open mongo-express from browser
 
@@ -69,4 +67,4 @@ Step 5: access the nodejs application from browser
 
     docker build -t my-app:1.0 .       
     
-The dot "." at the end of the command denotes location of the Dockerfile.
+
